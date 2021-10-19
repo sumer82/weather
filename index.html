@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <title>Weather app</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="first">
+      <div class="input">
+        <h2>Enter name of city :</h2>
+        <input id="input1" type="text" placeholder="Enter name of city" value="">
+      </div>
+      <h4>OR</h4>
+      <div class="locationbutton">
+        <h2>weather data for current location</h2>
+        <button id="locator">current location</button>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="back">
+        <button id="btn1">back</button>
+      </div>
+      <div class="weather_icon">
+        <img src="" alt="icon">
+      </div>
+      <div class=" temp">
+        <h2 id='temp1'>12°C</h2>
+      </div>
+      <div class="weather">
+        <h2 id="weatherC">Weather Wondition </h2>
+        <h2 id="location">Location</h2>
+      </div>
+      <div class="temp2">
+        <div class="real_feel">
+          <i class="fas fa-temperature-low"></i>
+          <h2 id="realFeel">Real feel</h2>
+        </div>
+        <div class="humidity">
+          <i class="fas fa-tint"></i>
+          <h2 id="humidity">Humidity</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
