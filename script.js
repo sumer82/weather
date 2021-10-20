@@ -29,7 +29,7 @@ console.log(first, second);
   async function showPosition(position) {
     console.log("Latitude: " + position.coords.latitude +
     "<br>"+"Longitude: " + position.coords.longitude);
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=8eb519f251270d184762fb503479bf4f`);
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${apikey}`);
     let data = await response.json();
     console.log(data);
     setdata(data);
@@ -43,7 +43,7 @@ locator.addEventListener("click",() => {
 
 
 async function fetchApi(city) {
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=8eb519f251270d184762fb503479bf4f`);
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}`);
     let data = await response.json();
     console.log(data);
     setdata(data);
